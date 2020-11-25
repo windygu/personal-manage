@@ -1,0 +1,6 @@
+E:\projectpath\csharp-code\myproject\personal-manage\personal-updated\obj\Debug\personal-manage.Upgrade.csprojAssemblyReference.cache
+E:\projectpath\csharp-code\myproject\personal-manage\personal-updated\obj\Debug\updated_version.commonForm.AutoUpdateFrm.resources
+E:\projectpath\csharp-code\myproject\personal-manage\personal-updated\obj\Debug\personal_manage.Upgrade.Properties.Resources.resources
+E:\projectpath\csharp-code\myproject\personal-manage\personal-updated\obj\Debug\personal-manage.Upgrade.csproj.GenerateResource.cache
+E:\projectpath\csharp-code\myproject\personal-manage\personal-updated\obj\Debug\personal-manage.Upgrade.csproj.CoreCompileInputs.cache
+E:\projectpath\csharp-code\myproject\personal-manage\personal-updated\obj\Debug\personal_manage.Upgrade.AutoUpdateFrm.resources
