@@ -160,7 +160,6 @@
             this.MinimizeBox = false;
             this.Name = "LoginFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "登录";
             this.Load += new System.EventHandler(this.LoginFrm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
