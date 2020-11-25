@@ -128,11 +128,21 @@ namespace personal_manage.UI.CsharpAuto
                     }
                 }
 
+                if (listDels.Count <= 0)
+                {
+                    MessageHelper.ShowWarn("至少需要选择一条记录进行删除");
+                    return;
+                }
+
                 R r = codeProjectTemplateConfigInfoBLL.Delete<CodeProjectTemplateConfigInfo>(listDels, null);
                 if (r.Successful)
                 {
                     MessageHelper.ShowSuccess("删除成功");
                     LoadData();
+                }
+                else
+                {
+                    MessageHelper.ShowWarn(r.ResultHint);
                 }
             }
             catch (Exception ex)
