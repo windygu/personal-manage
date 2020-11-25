@@ -16,6 +16,7 @@ namespace personal_manage.UI
     {
         public delegate void RefreshChartDelegate(List<int> x, List<int> y, string type);
 
+        private int y;
 
         public FormDemoChart()
         {
@@ -24,6 +25,14 @@ namespace personal_manage.UI
 
         private void FormDemoChart_Load(object sender, EventArgs e)
         {
+            //显示滚动条
+            this.AutoScroll = true;
+            this.panel1.AutoScrollMinSize = new Size() { Width = 1181, Height = 723 };
+            this.VerticalScroll.Visible = true;//竖的
+            y = 0;
+            this.VerticalScroll.Value = y;
+
+
             chart1.Series.Clear();
             ChartHelper.AddSeries(chart1, "柱状图", SeriesChartType.Column, Color.Lime, Color.Red, true);
             ChartHelper.AddSeries(chart1, "曲线图", SeriesChartType.Spline, Color.Red, Color.Red);
@@ -180,6 +189,17 @@ namespace personal_manage.UI
         private void chart3_Click(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void FormDemoChart_Paint(object sender, PaintEventArgs e)
+        {
+            this.VerticalScroll.Value = y;
+        }
+
+        private void FormDemoChart_Scroll(object sender, ScrollEventArgs e)
+        {
+            y = this.VerticalScroll.Value;
         }
     }
 }
